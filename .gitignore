@@ -28,3 +28,45 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+
+
+# Gradle build output
+/build/
+/.gradle/
+
+# Local configuration file (user-specific)
+gradle.properties
+
+# Kotlin DSL build script cache
+/.gradle/
+/.kts_compiled/
+
+# IDE settings
+.idea/
+*.iml
+*.iws
+
+# VS Code settings (optional)
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Java class files
+*.class
+
+# JAR/WAR/EAR archives
+*.jar
+*.war
+*.ear
+
+# Lombok-generated files (if using)
+lombok.config
+
+# Optional: IntelliJ out directory
+/out/

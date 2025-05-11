@@ -4,11 +4,21 @@ plugins {
     id 'java'
 }
 
+
+repositories {
+    mavenCentral()
+}
+
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // JPA
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3' // MyBatis
-    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client:3.3.3'
+    // PostgreSQL JDBC (15.12 호환)
+    runtimeOnly 'org.postgresql:postgresql:42.7.3'
+    // Lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 }
 
 java {
